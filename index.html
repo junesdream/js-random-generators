@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Generator</title>
+		<link rel="stylesheet" href="style.css" />
+        <!-- google icons 
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/> -->
+       <script src="https://kit.fontawesome.com/829e3932fc.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- zwei Spalte der Seite 
+    <div class="container"> 
+<div class="color-generator">
+            hallo
+</div>
+<div class="image-generator">
+            hey
+</div>
+    </div>
+-->
+		<!--  Section of Color-Generator-->
+		<section class="color-generator">
+			<h1>Random Color Generator</h1>
+
+			<div class="color-generator-container"></div>
+			<!--   Reloading Button <button class="btn">Load More</button>   -->
+			<button
+				class="btn-box-btn"
+				value="Reload Page"
+				onClick="window.location.reload(true)"
+			>
+				<span>LOAD MORE</span>
+			</button>
+		</section>
+
+		<!--  Section of Random Photos-->
+		<section class="image-generator">
+			<h2>Random Color Generator</h2>
+			<div class="image-generator-container">
+				<img src="https://picsum.photos/300?random=1" />
+				<img src="https://picsum.photos/300?random=2" />
+				<img src="https://picsum.photos/300?random=3" />
+				<img src="https://picsum.photos/300?random=4" />
+				<img src="https://picsum.photos/300?random=5" />
+				<img src="https://picsum.photos/300?random=6" />
+			</div>
+			<button class="btn">Load More</button>
+		</section>
+
+		<!--  Section for password-generator-->
+		<section class="password-generator">
+			<h3>Password Generator</h3>
+			<div class="pw-container">
+				<div class="pw-header">
+					<div class="pw">
+						<span id="pw">l823Zs78#Css09@</span>
+						<button id="copy">Copy</button>
+					</div>
+				</div>
+				<div class="pw-body">
+					<div class="form-control">
+						<label for="len">Password Length</label>
+						<input
+							id="len"
+							value="14"
+							type="number"
+							min="2"
+							max="30"
+						/>
+					</div>
+					<div class="form-control">
+						<label for="upper">Contain Uppercase Letters</label>
+						<input id="upper" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="lower">Contain Lowercase Letters</label>
+						<input id="lower" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="number">Contain Numbers</label>
+						<input id="number" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="symbol">Contain Symbols</label>
+						<input id="symbol" type="checkbox" />
+					</div>
+
+					<button class="generate" id="generate">
+						Generate Password
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!--  Section for task list-->
+		<section class="todo-list">
+			<div class="todo-list-header">
+				<h1>Daily Task List 2023</h1>
+				<form id="new-task-form">
+					<input
+						type="text"
+						name="new-task-input"
+						id="new-task-input"
+						placeholder="What are you doing today?"
+					/>
+					<input
+						type="submit"
+						id="new-task-submit"
+						value="Add task"
+					/>
+				</form>
+			</div>
+
+			<main>
+				<div class="task-list">
+					<h2>Tasks</h2>
+					<div id="tasks">
+						<!-- dummy 
+                <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> 
+tasks -->
+					</div>
+				</div>
+			</main>
+		</section>
+		<!--  Section for random User-->
+		<section class="random-user">
+			<div class="user-profile">
+				<div class="profile-top">
+					<img id="image"
+						src=""
+						alt=""
+					/>
+					<div class="profile-info">
+						<span id="name">Name</span>
+						<span>|</span>
+						<span id="gender">Gender</span>
+					</div>
+				</div>
+				<div class="profile-bottom">
+					<div class="profile-info">
+                        <span> <i class="fa-sharp fa-solid fa-envelope"></i>  </span>
+                        <span id="email">Email</span>
+					</div>
+					<div class="profile-info">
+                        <span><i class="fa-solid fa-phone-volume"></i></span>
+                        <span id="phone">Phone</span>
+					</div>
+					<div class="profile-info">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span id="location">Country</span>
+					</div>
+				</div>
+			</div>
+            <button class="user-button" onclick=getRandomUser() type="button">New User</button>
+		</section>
+
+<!--  Section hackernews-->
+<section class="quote-generator">
+    <div class="wrapper">
+ <header>Quote of Day</header>
+ <div class="content">
+    <div class="quote-area">
+        <i class="fa-solid fa-quote-left"></i>
+        <p class="quote">Without deep reflection one knows from daily life that one exists for other people.</p>
+        <i class="fa-solid fa-quote-right"></i>
+    </div>
+    <div class="author">
+        <span>__</span>
+        <span class="author-name">Albert Einstein</span>
+    </div>
+ </div>
+ <div class="buttons">
+    <div class="features">
+        <ul>
+            <li class="sound"><i class="fa-solid fa-volume-high"></i></li>
+            <li class="copy"><i class="fa-sharp fa-solid fa-clipboard"></i></li>
+            <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+        <button class="quote-button">New Quote</button>
+    </div>
+ </div>
+</div>
+</section>
+
+
+		<script src="index.js"></script>
+		<script src="app.js"></script>
+		<script src="script.js"></script>
+		<script src="main.js"></script>
+        <script src="script2.js"></script>
+        <script src="script3.js"></script>
+	</body>
+</html>
