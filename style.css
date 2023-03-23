@@ -765,7 +765,22 @@ main {
 }
 
 .user-button:hover {
-	background-image: linear-gradient(to left,#e7484f,#e7484f 16.65%,#f68b1d 16.65%,#f68b1d 33.3%,#fced00 33.3%,#fced00 49.95%,#009e4f 49.95%,#009e4f 66.6%,#00aac3 66.6%,#00aac3 83.25%,#732982 83.25%,#732982 100%,#e7484f 100%);
+	background-image: linear-gradient(
+		to left,
+		#e7484f,
+		#e7484f 16.65%,
+		#f68b1d 16.65%,
+		#f68b1d 33.3%,
+		#fced00 33.3%,
+		#fced00 49.95%,
+		#009e4f 49.95%,
+		#009e4f 66.6%,
+		#00aac3 66.6%,
+		#00aac3 83.25%,
+		#732982 83.25%,
+		#732982 100%,
+		#e7484f 100%
+	);
 	animation: slidebg 2s linear infinite;
 }
 
@@ -790,23 +805,52 @@ main {
 	background: white;
 	border-radius: 15px;
 	padding: 30px 30px 25px;
-  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-  box-shadow: 0 3px 4px 10px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(
+		109.6deg,
+		rgb(20, 30, 48) 11.2%,
+		rgb(36, 59, 85) 91.1%
+	);
+	box-shadow: 0 3px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper header {
 	font-size: 35px;
 	font-weight: 600;
 	text-align: center;
-  background: linear-gradient(to left, #f00, #f50, #ff8000, #fa0, #ff0, #af0, #80ff00, #0f5, #00ff80, #0fa, #0ff, #00d4ff, #0af, #05f, #002bff, #00f, #7f00ff, #a0f, #d400ff, #f0f, #f0a, #ff0080, #f05, #f00);
-  color: #0000;
-  -webkit-background-clip: text;
-   
+	background: linear-gradient(
+		to left,
+		#f00,
+		#f50,
+		#ff8000,
+		#fa0,
+		#ff0,
+		#af0,
+		#80ff00,
+		#0f5,
+		#00ff80,
+		#0fa,
+		#0ff,
+		#00d4ff,
+		#0af,
+		#05f,
+		#002bff,
+		#00f,
+		#7f00ff,
+		#a0f,
+		#d400ff,
+		#f0f,
+		#f0a,
+		#ff0080,
+		#f05,
+		#f00
+	);
+	color: #0000;
+	-webkit-background-clip: text;
 }
 
 .wrapper .content {
 	margin: 35px 0;
-  color: springgreen;
+	color: springgreen;
 }
 
 .content .quote-area {
@@ -843,36 +887,36 @@ main {
 	font-family: monospace;
 }
 
-.wrapper .buttons{
-  border-top: 2px solid hsl(0, 100%, 50%);
+.wrapper .buttons {
+	border-top: 2px solid hsl(0, 100%, 50%);
 	-webkit-animation: rainbow 5s infinite alternate;
 }
 
-.buttons .features{
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  justify-content:space-between
+.buttons .features {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+	justify-content: space-between;
 }
 
-.features ul{
-  display: flex;
+.features ul {
+	display: flex;
 }
 
-.features ul li{
-  list-style: none;
-  margin: 0 5px;
-  height: 47px;
-  width: 47px;
-  display: flex;
-  cursor: pointer;
-  color: rgb(236, 23, 187);
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 2px dashed rgb(236, 23, 187);
-  transition: all 0.3s ease;
-  /*border: double 4px transparent;
+.features ul li {
+	list-style: none;
+	margin: 0 5px;
+	height: 47px;
+	width: 47px;
+	display: flex;
+	cursor: pointer;
+	color: rgb(236, 23, 187);
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 2px dashed rgb(236, 23, 187);
+	transition: all 0.3s ease;
+	/*border: double 4px transparent;
 	background-image: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%),
 		radial-gradient(circle at top left, #f00, #3020ff);
 	background-origin: border-box;
@@ -880,25 +924,55 @@ main {
 }
 
 .features ul li:hover {
-  color: yellowgreen;
-  border: 2px solid yellowgreen;
-  background-image: linear-gradient(to left,#e7484f,#e7484f 16.65%,#f68b1d 16.65%,#f68b1d 33.3%,#fced00 33.3%,#fced00 49.95%,#009e4f 49.95%,#009e4f 66.6%,#00aac3 66.6%,#00aac3 83.25%,#732982 83.25%,#732982 100%,#e7484f 100%);
+	color: yellowgreen;
+	border: 2px solid yellowgreen;
+	background-image: linear-gradient(
+		to left,
+		#e7484f,
+		#e7484f 16.65%,
+		#f68b1d 16.65%,
+		#f68b1d 33.3%,
+		#fced00 33.3%,
+		#fced00 49.95%,
+		#009e4f 49.95%,
+		#009e4f 66.6%,
+		#00aac3 66.6%,
+		#00aac3 83.25%,
+		#732982 83.25%,
+		#732982 100%,
+		#e7484f 100%
+	);
 	animation: slidebg 2s linear infinite;
 }
 
-.features .quote-button{
-  border: none;
-  outline: none;
-  padding: 13px 22px;
-  font-style:  16px;
-  cursor: pointer;
-  background-color: #fff;
-  border-radius: 30px;
- background-image: linear-gradient(to left,#e7484f,#e7484f 16.65%,#f68b1d 16.65%,#f68b1d 33.3%,#fced00 33.3%,#fced00 49.95%,#009e4f 49.95%,#009e4f 66.6%,#00aac3 66.6%,#00aac3 83.25%,#732982 83.25%,#732982 100%,#e7484f 100%);
+.features .quote-button {
+	border: none;
+	outline: none;
+	padding: 13px 22px;
+	font-style: 16px;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 30px;
+	background-image: linear-gradient(
+		to left,
+		#e7484f,
+		#e7484f 16.65%,
+		#f68b1d 16.65%,
+		#f68b1d 33.3%,
+		#fced00 33.3%,
+		#fced00 49.95%,
+		#009e4f 49.95%,
+		#009e4f 66.6%,
+		#00aac3 66.6%,
+		#00aac3 83.25%,
+		#732982 83.25%,
+		#732982 100%,
+		#e7484f 100%
+	);
 	animation: slidebg 2s linear infinite;
 }
 
-.quote-button .loading{
-  opacity: 0.7;
-  pointer-events: none;
+.quote-button .loading {
+	opacity: 0.7;
+	pointer-events: none;
 }
